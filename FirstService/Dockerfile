@@ -12,4 +12,4 @@ EXPOSE 8000
 ENV ASPNETCORE_URLS=http://*:8000
 WORKDIR /app
 COPY --from=build /app/out .
-ENTRYPOINT ["dotnet", "Service.dll"]
+ENTRYPOINT ["dotnet", "FirstService.dll"]
